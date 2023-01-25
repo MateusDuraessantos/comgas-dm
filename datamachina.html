@@ -19,13 +19,13 @@
       <div class="container-all container-all--header">
         <div>
           <img src="assets/header/logo.svg" />
+          <img class="header__comgas" src="assets/header/plugue.svg" />
           <img class="header__comgas" src="assets/header/logo_comgas.svg" />
         </div>
         <div class="header__icons">
           <a class="header__home" href="index.html"
             ><img src="assets/header/home.svg"
           /></a>
-          <img src="assets/header/info.svg" />
         </div>
       </div>
     </header>
@@ -66,8 +66,13 @@
           <br />
           Usamos Big Data, Machine Learning, Realidade Aumentada, Visão
           Computacional entre outras tecnologias com Design Thinking, Imersões e
-          muitas ferramentas de colaboração para fazer emergir soluções de
-          impacto para nossos parceiros e clientes.
+          muitas <strong>
+            ferramentas de colaboração para fazer emergir soluções de
+            impacto para nossos parceiros e clientes.
+          </strong>
+          <br>
+          <br>
+          <strong>/gostamos de problemas difíceis!</strong>
         </p>
         <div class="conhecimentos">
           <div class="conhecimentos__cont">
@@ -95,7 +100,6 @@
             />
           </div>
         </div>
-        <h2>/gostamos de problemas difíceis!</h2>
       </div>
     </div>
     <div class="container-all--background">
@@ -195,29 +199,34 @@
               </h2>
             </span>
             <h3>Cenário</h3>
-            <li>Acidentes ocasionados pela falta de conhecimento da rede</li>
+            <li>
+              Acidentes ocasionados pela falta de conhecimento da rede,
+              principalmente por terceirizados.
+            </li>
             <h3>Objetivo principal</h3>
             <li>
               Monitorar a rede a partir de indicadores da cidade para enriquecer
-              informação para prevenção e predição efetivas de danos.
+              informação para prevenção e predição efetivas de danos. Através da
+              criação de um índice de priorização de chamados.
             </li>
             <h3>Desenvolvimento</h3>
             <li>
-              Design Thinking para desenvolvimento de PoC's (5 desenvolvidas ao
-              longo do projeto)
+              Cinco provas de conceito (PoC's) desenvolvidas ao longo do
+              projeto.
             </li>
 
             <li>
-              Construção conjunta de um MVP (IPC+: Índice de Priorização de
-              Chamados)
+              Construção conjunta de um MVP para visualização do IPC+ (Índice de
+              Priorização de Chamados) geolocalizado.
             </li>
 
-            <li>Painel de Consultas Online + API</li>
-            <img
-              class="projetos__image--notebook"
-              src="assets/conheca_a_datamachina/notebook.png"
-              alt="notebook"
-            />
+            <li>Painel de Consultas Online + API.</li>
+            <div class="cont-notebook">
+              <img
+                class="projetos__image--notebook"
+                src="assets/conheca_a_datamachina/notebook.png"
+              />
+            </div>
           </div>
           <!-- card 2 -->
           <div class="projetos__card">
@@ -241,26 +250,31 @@
 
             <h3>Desenvolvimento</h3>
 
-            <li>Aplicativo com a geolocalização da rede (PoC)</li>
+            <li>Aplicativo com a geolocalização da rede (PoC).</li>
 
             <li>
-              Possibilidade de alteração dos raios de visualização da rede
+              Possibilidade de alteração dos raios de visualização da rede.
             </li>
 
             <li>
               Gráficos prevendo a baixa fidelidade de localização da tubulação
-              para evitar erros de interpretação
+              para evitar erros de interpretação.
             </li>
-            <img
-              class="projetos__qr"
-              src="assets/conheca_a_datamachina/qr.svg"
-              alt=""
-            />
-            <img
-              class="projetos__image--celular"
-              src="assets/conheca_a_datamachina/celular.png"
-              alt="notebook"
-            />
+            <div class="content">
+              <img
+                class="content__qr"
+                src="assets/conheca_a_datamachina/qr.jpg"
+                alt=""
+              />
+              <p class="content__text">
+                Escaneie o <i>QR-Code</i> <br />
+                e <strong>saiba mais</strong>.
+              </p>
+              <img
+                class="content__celular"
+                src="assets/conheca_a_datamachina/celular.png"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -386,18 +400,18 @@
         padding: 22px;
         border-radius: 6px;
       }
-
+      .cont-notebook {
+        display: flex;
+        justify-content: center;
+        height: 160px;
+      }
       .projetos__image--notebook {
-        justify-self: flex-start;
-        width: 80%;
+        height: 300px;
+        object-fit: contain;
         margin-left: auto;
         margin-right: auto;
       }
-      .projetos__image--celular {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+
       .projetos__image--pluge {
         object-fit: contain;
         margin: auto;
@@ -415,8 +429,27 @@
         font-size: 20px;
       }
 
-      .projetos__qr {
-        width: 100%;
+      .content {
+        display: flex;
+        align-items: center;
+        height: 200px;
+        transform: translateY(30px);
+        justify-content: space-between;
+        gap: 25px;
+      }
+      .content__qr {
+        width: 120px;
+        object-fit: contain;
+      }
+      .content__text {
+        width: max-content;
+        font-size: 22px;
+      }
+      .content__celular {
+        width: 120px;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
       }
     </style>
   </body>
