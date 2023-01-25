@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Realidade Estendida - Quiz</title>
+    <link rel="icon" type="image/x-icon" href="assets/dm_logo.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <header>
+      <div class="container-all container-all--header">
+        <div>
+          <img src="assets/header/logo.svg" />
+          <img class="header__comgas" src="assets/header/logo_comgas.svg" />
+        </div>
+        <div class="header__icons">
+          <a class="header__home" href="index.html"
+            ><img src="assets/header/home.svg"
+          /></a>
+          <img src="assets/header/info.svg" />
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="container-all grid-1">
+      <div>
+        <img class="sabe-tudo" src="assets/quiz/img_1.svg" />
+      </div>
+      <div>
+        <h1>QUIZ</h1>
+        <p class="paragrafo-1">
+          Visitou todas as estações do Laboratório? Então você está pronto para
+          testar seus conhecimentos sobre Realidade Estendida. Responda o quiz a
+          seguir e veja se você está craque!
+        </p>
+        <br />
+        <a class="responda" href="quiz.html">RESPONDA</a>
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      /* font-family: 'Roboto', sans-serif; */
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+      }
+
+      .refresh {
+        display: block;
+        padding: 10px 30px;
+        background: #007ab6;
+        width: max-content;
+        margin: auto;
+        border: none;
+        border-radius: 6px;
+        color: #fdfbf9;
+        transition: 0.2s;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+      }
+
+      .refresh:hover {
+        background: #fdfbf9;
+        color: #007ab6;
+        transition: 0.3s;
+      }
+
+      .sabe-tudo {
+        width: 65%;
+        margin-left: 200px;
+      }
+      .grid-1 {
+        height: calc(100vh - 100px);
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+      }
+
+      .responda {
+        display: block;
+        padding: 20px 30px;
+        border-radius: 6px;
+        background-color: #007ab6;
+        color: #fdfbf9;
+        transition: 0.2s;
+        width: max-content;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 26px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .responda:hover {
+        background-color: #0093fc;
+        transition: 0.1s;
+        transform: scale(1.04);
+      }
+    </style>
+  </body>
+</html>

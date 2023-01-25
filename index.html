@@ -3,67 +3,92 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Comgás - Data Machina</title>
+    <title>Realidade Estendida - Data Machina</title>
     <!-- Bootstrap 5 -->
-    <!--   <link
+      <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
-    /> -->
+    />
 
     <link rel="icon" type="image/x-icon" href="assets/dm_logo.svg" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HEADER -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <header>
+      <div class="container-all container-all--header">
+        <div>
+          <img src="assets/header/logo.svg" />
+          <img class="header__comgas" src="assets/header/logo_comgas.svg" />
+        </div>
+        <div class="header__icons">
+          <a class="header__home" href="index.html"
+            ><img src="assets/header/home.svg"
+          /></a>
+          <img src="assets/header/info.svg" />
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY -->
     <div class="container-all">
       <div class="title">
-        <h2>Seja bem-vindo ao Laboratório de Realidade Estendida</h2>
-        <p>Uma parceria Data Machina e Plugue</p>
+        <h2>Seja bem-vindo ao</h2>
+        <h1>Laboratório de Realidade Estendida</h1>
+        <br />
+        <br />
+        <p class="paragrafo-1">Uma parceria Data Machina e Plugue</p>
       </div>
       <br />
 
       <div class="grid-cards">
         <!-- Card -->
         <a class="dm-card" href="datamachina.html">
-          <img class="dm-card__image" src="assets/img/img_sobre_dm.png" />
+          <img class="dm-card__image" src="assets/img/img_sobre_dm.jpg" />
           <h5 class="dm-card__h5">Conheça a Data Machina</h5>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="quiz.html">
-          <img class="dm-card__image" src="assets/img/lab.avif" />
+        <a class="dm-card" href="laboratorios.html">
+          <img class="dm-card__image" src="assets/img/image.jpg" />
           <h5 class="dm-card__h5">Conheça o Laboratório</h5>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="quiz.html">
-          <img class="dm-card__image" src="assets/img/image.png" />
+        <a class="dm-card" href="suporte.html">
+          <img class="dm-card__image" src="assets/img/suporte.jpg" />
           <h5 class="dm-card__h5">Suporte à manutenção assistida</h5>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="quiz.html">
-          <img class="dm-card__image" src="assets/img/computacional.avif" />
+        <a class="dm-card" href="computacinal.html">
+          <img class="dm-card__image" src="assets/img/capacitacao.jpg" />
           <h5 class="dm-card__h5">Visão computacional</h5>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="quiz.html">
-          <img class="dm-card__image" src="assets/img/metaverso.avif" />
+        <a class="dm-card" href="capacitacao.html">
+          <img class="dm-card__image" src="assets/img/lab.jpg" />
           <h5 class="dm-card__h5">Capacitação usando meta verso</h5>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="quiz.html">
-          <img class="dm-card__image" src="assets/img/quiz.avif" />
+        <a class="dm-card" href="quizhome.html">
+          <img class="dm-card__image" src="assets/img/quiz.jpg" />
           <h5 class="dm-card__h5">QUIZ</h5>
         </a>
       </div>
     </div>
 
     <!-- Bootstrap 5 -->
-    <!--     <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
- -->
+
     <style>
       .header {
         width: 100%;
@@ -76,13 +101,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: #007ab6;
-        padding-top: 140px;
+
+        padding-top: 36px;
         font-family: "Roboto", sans-serif !important;
       }
       p,
+      h2,
+      h1 {
+        color: #007ab6;
+      }
       h2 {
-        color: white;
+        font-weight: 300;
+      }
+      h2,
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 44px;
       }
 
       .btn-primary {
@@ -140,7 +177,7 @@
         height: 100%;
         object-fit: cover;
         transition: 0.5s;
-        opacity: 0.3;
+        opacity: 0.5;
       }
 
       .dm-card__image:hover {

@@ -3,23 +3,58 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Quiz</title>
+    <title>Realidade Estendida - Quiz</title>
+    <link rel="icon" type="image/x-icon" href="assets/dm_logo.svg" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-quiz">
-      <a href="" onclick="recarregar()" class="refresh">Reiniciar</a>
-      <br />
-      <!-- QUIZ -->
+    <!-- HEADER -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <header>
+      <div class="container-all container-all--header">
+        <div>
+          <img src="assets/header/logo.svg" />
+          <img class="header__comgas" src="assets/header/logo_comgas.svg" />
+        </div>
+        <div class="header__icons">
+          <a class="header__home" href="index.html"
+            ><img src="assets/header/home.svg"
+          /></a>
+          <img src="assets/header/info.svg" />
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container-all">
+      <div class="grid-1">
+        <div>
+          <a class="grid-1__refresh" href="quizhome.html" onclick="recarregar()"
+            >REINICIAR</a
+          >
+          <img class="grid-1__sabetudo" src="assets/quiz/img_1.svg" />
+        </div>
+        <div>
+          <a
+            data-quiz="QLV49DZVG"
+            data-type="4"
+            data-fullscreen="true"
+            href="https://take.quiz-maker.com/QLV49DZVG"
+            >Loading...</a
+          >
+        </div>
+      </div>
     </div>
 
-    <a
-      data-quiz="QLV49DZVG"
-      data-type="4"
-      data-fullscreen="true"
-      href="https://take.quiz-maker.com/QLV49DZVG"
-      >Loading...</a
-    >
-    <script></script>
     <script>
       function recarregar() {
         window.location.reload();
@@ -67,29 +102,44 @@
       body {
         font-family: "Roboto", sans-serif;
         margin: 0;
-        height: 100vh;
       }
 
-      .refresh {
+      .grid-1 {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 400px 1fr;
+        gap: 100px;
+      }
+
+      .grid-1__refresh {
+        display: flex;
+        text-align: center;
         display: block;
-        padding: 10px 30px;
-        background: #007ab6;
-        width: max-content;
-        margin: auto;
-        border: none;
+        padding: 20px 30px;
         border-radius: 6px;
+        background-color: #007ab6;
         color: #fdfbf9;
         transition: 0.2s;
-        cursor: pointer;
+        width: 100%;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 26px;
         text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
       }
 
-      .refresh:hover {
-        background: #fdfbf9;
-        color: #007ab6;
-        transition: 0.3s;
+      .grid-1__refresh:hover {
+        background-color: #0093fc;
+        transition: 0.1s;
+        transform: scale(1.04);
+      }
+
+      .grid-1__sabetudo {
+        padding-top: 60px;
+        width: 100%;
+        margin: auto;
       }
     </style>
   </body>
