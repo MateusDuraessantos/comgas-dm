@@ -4,13 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Realidade Estendida - Data Machina</title>
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
 
     <link rel="icon" type="image/x-icon" href="assets/dm_logo.svg" />
     <link rel="stylesheet" href="style.css" />
@@ -50,44 +43,55 @@
 
       <div class="grid-cards">
         <!-- Card -->
-        <a class="dm-card" href="datamachina.html">
-          <img class="dm-card__image" src="assets/img/img_sobre_dm.jpg" />
-          <h5 class="dm-card__h5">Conheça a Data Machina</h5>
+        <a class="card" href="datamachina.html">
+          <img class="card__image" src="assets/img/img_sobre_dm.jpg" />
+          <div class="card__container">
+            <span></span>
+            <h5 class="card__h5">Conheça a Data Machina</h5>
+          </div>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="laboratorios.html">
-          <img class="dm-card__image" src="assets/img/image.jpg" />
-          <h5 class="dm-card__h5">Conheça o Laboratório</h5>
+        <a class="card" href="laboratorios.html">
+          <img class="card__image" src="assets/img/image.jpg" />
+          <div class="card__container">
+            <span></span>
+            <h5 class="card__h5">Conheça o Laboratório</h5>
+          </div>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="suporte.html">
-          <img class="dm-card__image" src="assets/img/suporte.jpg" />
-          <h5 class="dm-card__h5">Suporte à manutenção assistida</h5>
+        <a class="card" href="suporte.html">
+          <img class="card__image" src="assets/img/suporte.jpg" />
+          <div class="card__container">
+            <p class="card__projeto"><i>PROJETO</i></p>
+            <h5 class="card__h5">Suporte à Manutenção Assistida</h5>
+          </div>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="computacinal.html">
-          <img class="dm-card__image" src="assets/img/capacitacao.jpg" />
-          <h5 class="dm-card__h5">Visão computacional</h5>
+        <a class="card" href="computacinal.html">
+          <img class="card__image" src="assets/img/capacitacao.jpg" />
+          <div class="card__container">
+            <p class="card__projeto"><i>PROJETO</i></p>
+            <h5 class="card__h5">Visão Computacional</h5>
+          </div>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="capacitacao.html">
-          <img class="dm-card__image" src="assets/img/lab.jpg" />
-          <h5 class="dm-card__h5">Capacitação usando meta verso</h5>
+        <a class="card" href="capacitacao.html">
+          <img class="card__image" src="assets/img/lab.jpg" />
+          <div class="card__container">
+            <p class="card__projeto"><i>PROJETO</i></p>
+            <h5 class="card__h5">Capacitação usando Metaverso</h5>
+          </div>
         </a>
         <!-- Card -->
-        <a class="dm-card" href="quizhome.html">
-          <img class="dm-card__image" src="assets/img/quiz.jpg" />
-          <h5 class="dm-card__h5">QUIZ</h5>
+        <a class="card" href="quizhome.html">
+          <img class="card__image" src="assets/img/quiz.jpg" />
+          <div class="card__container">
+            <span></span>
+            <h5 class="card__h5 quiz">QUIZ</h5>
+          </div>
         </a>
       </div>
     </div>
-
-    <!-- Bootstrap 5 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
 
     <style>
       .header {
@@ -102,7 +106,6 @@
         flex-direction: column;
         align-items: center;
         padding-top: 36px;
-        font-family: "Roboto", sans-serif !important;
       }
       p,
       h2,
@@ -139,16 +142,15 @@
       .grid-cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        height: 500px;
+        max-height: 700px;
+        height: calc(100vh - 400px);
         justify-items: center;
         gap: 14px;
         margin: auto;
       }
 
-      .dm-card {
+      .card {
         position: relative;
-        display: flex;
-        align-items: flex-end;
         overflow: hidden;
         width: 100%;
         height: 100%;
@@ -156,19 +158,33 @@
         border-radius: 6px;
         transition: 0.3s;
       }
+      .card__container {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+      }
+      .card__projeto {
+        font-size: 30px;
+        font-weight: 300;
+        color: #faf6f0;
+        z-index: 3;
+      }
 
-      .dm-card__h5 {
+      .card__h5 {
         font-weight: 600;
         font-size: 30px;
         z-index: 3;
-        color: white;
+        color: #faf6f0;
         text-align: center;
         margin-bottom: 34px;
         width: 100%;
         padding: 0 12px;
       }
 
-      .dm-card__image {
+      .card__image {
         position: absolute;
         top: 0;
         left: 0;
@@ -179,7 +195,7 @@
         opacity: 0.5;
       }
 
-      .dm-card__image:hover {
+      .card__image:hover {
         opacity: 1;
         transition: 0.2s;
       }

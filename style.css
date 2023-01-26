@@ -1,16 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap");
 
-/* font-family: 'Roboto Slab', serif; */
+/* font-family: 'Montserrat', sans-serif; */
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 body {
     position: relative;
-    font-family: "Roboto", sans-serif !important;
     margin: 0;
     padding: 0;
     background-color: #faf6f0;
@@ -45,11 +43,18 @@ h2 {
 .paragrafo-1 {
     font-size: 26px;
     color: #2c2c2c;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 li {
     margin-bottom: 30px;
+}
+
+hr {
+    border: none;
+    border-style: solid;
+    border-color: rgb(191, 191, 191);
+    border-width: 0 0 1px 0;
 }
 
 /*  */
@@ -63,17 +68,15 @@ p, body {
 }
 
 .container-all {
-    max-width: calc(100% - 200px);
-    max-width: 1500px;
-    width: 100%;
+    width: calc(100% - 200px);
+    max-width: 1980px;
     margin: auto;
 }
 
-
 /* HEADER */
 
-
 header {
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
